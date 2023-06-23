@@ -1,5 +1,5 @@
 # create project using cmd
-composer create-project --prefer-dist laravel/laravel WebRouteExample
+laravel new WebRouteExample
 cd WebRouteExample
 
 
