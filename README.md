@@ -1,10 +1,10 @@
-// create project using cmd
+# create project using cmd
 composer create-project --prefer-dist laravel/laravel WebRouteExample
 cd WebRouteExample
 
 
 --------------------------------------------------------------------------
-// routes\web.php (Add)
+# routes\web.php (Add)
 --------------------------------------------------------------------------
 Route::get('/', function () {
     return 'Hello, World!';
@@ -35,16 +35,16 @@ Route::get('/users', function () {
 });
 
 
-Route::get('/users-json', function () {
+**Route::get('/users-json', function () {
     $users = [
         ['name' => 'John Doe', 'email' => 'john@example.com'],
         ['name' => 'Jane Smith', 'email' => 'jane@example.com'],
     ];
     return response()->json($users);
 });
---------------------------------------------------------------------------
+**--------------------------------------------------------------------------
 
 
-// run project using cmd
+# run project using cmd
 php artisan serve
 
