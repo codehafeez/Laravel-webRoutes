@@ -3,9 +3,7 @@ composer create-project --prefer-dist laravel/laravel WebRouteExample
 cd WebRouteExample
 
 
---------------------------------------------------------------------------
 # routes\web.php (Add)
---------------------------------------------------------------------------
 Route::get('/', function () {
     return 'Hello, World!';
 });
