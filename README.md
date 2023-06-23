@@ -21,9 +21,13 @@ Route::get('/users/{id}', function ($id) {
 });
 
 
+
+
 Route::get('/profile', function () {
     return 'User profile page';
 })->name('profile');
+
+
 
 
 Route::get('/users', function () {
@@ -35,14 +39,17 @@ Route::get('/users', function () {
 });
 
 
-**Route::get('/users-json', function () {
+
+
+Route::get('/users-json', function () {
     $users = [
         ['name' => 'John Doe', 'email' => 'john@example.com'],
         ['name' => 'Jane Smith', 'email' => 'jane@example.com'],
     ];
     return response()->json($users);
 });
-**--------------------------------------------------------------------------
+
+
 
 
 # run project using cmd
